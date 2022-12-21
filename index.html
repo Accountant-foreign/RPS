@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <script>
+        var counterPlayer;
+        var counterComputer;
+    </script>
+    <h1><center>Score: <em id="player">0</em>:<em id="computer">0</em></center></h1>
+    <div id="container">
+        <div class="float-child">
+            <center>
+                <button class="btn" onclick="game('Rock');">Rock</button>
+                <br><br>
+                <button class="btn" onclick="game('Paper');">Paper</button>
+                <br><br>
+                <button class="btn" onclick="game('Scissors');">Scissors</button></center>
+        </div>
+        <div class="float-child">
+            <center>
+                <button id="r">Rock</button>
+                <br><br>
+                <button id="p">Paper</button>
+                <br><br>
+                <button id="s">Scissors</button>
+            </center>
+        </div>
+    </div>
+    <div>
+        <center><p id="message"></p></center>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

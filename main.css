@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+em {
+  color: red;
+}
+
+#container {
+  display: flex;
+}
+
+.float-child {
+  flex: 2;
+  border: 2px solid yellow;
+  background-color: gray;
+}
+
+button {
+  margin: 30px;
+}
+
+h1 {
+  color: white;
+}
