@@ -74,20 +74,27 @@ function game(playerChoice){
 
     if(counterPlayer==5||counterComputer==5){
         document.body.innerHTML="";
+
+        let divide=document.createElement('div');
+        divide.setAttribute('id', 'parent');
+
         let element=document.createElement('button');
         element.addEventListener('click', () => {
             location.reload();
         });
+        element.id="centre";
         element.innerHTML="Try again";
+
+        divide.append(element);
         if(counterComputer==counterPlayer){
             alert("Looks like its a tie :|");
-            document.body.appendChild(element);
+            document.body.appendChild(divide);
         } else if(counterPlayer>counterComputer){
             alert("Congratulations, you won :D");
-            document.body.appendChild(element);
+            document.body.appendChild(divide);
         } else {
             alert("Unfortunate, but you lose :(");
-            document.body.appendChild(element);
+            document.body.appendChild(divide);
         }
         return;
     }

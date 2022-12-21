@@ -7,6 +7,12 @@ em {
   color: red;
 }
 
+img {
+  border-radius: 10%;
+  height: 100px;
+  width: 100px;
+}
+
 #container {
   display: flex;
 }
@@ -23,4 +29,16 @@ button {
 
 h1 {
   color: white;
+}
+
+#parent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#centre{
+  height: 70px;
+  width: 170px;
+  border-radius: 10px;
 }
