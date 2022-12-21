@@ -73,15 +73,21 @@ function game(playerChoice){
     document.getElementById('computer').innerHTML=counterComputer;
 
     if(counterPlayer==5||counterComputer==5){
+        document.body.innerHTML="";
+        let element=document.createElement('button');
+        element.addEventListener('click', () => {
+            location.reload();
+        });
+        element.innerHTML="Try again";
         if(counterComputer==counterPlayer){
-            document.write/*('<div id="test">The Game is a Tie...</div>');
-            document.getElementById('test').appendChild*/('<button onclick="location.reload()">Try again</button>');
+            alert("Looks like its a tie :|");
+            document.body.appendChild(element);
         } else if(counterPlayer>counterComputer){
-            document.write/*('<div id="test">Congratulations! You won!</div>');
-            document.getElementById('test').appendChild*/('<button onclick="location.reload()">Try again</button>');
+            alert("Congratulations, you won :D");
+            document.body.appendChild(element);
         } else {
-            document.write/*('<div id="test">Unfortunately, you lost... try again by clicking the button below.</div>');
-            document.getElementById('test').appendChild*/('<button onclick="location.reload()">Try again</button>');
+            alert("Unfortunate, but you lose :(");
+            document.body.appendChild(element);
         }
         return;
     }
