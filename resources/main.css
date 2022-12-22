@@ -21,6 +21,9 @@ img {
   flex: 2;
   border: 2px solid yellow;
   background-color: gray;
+  border-radius: 10%;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 button {
@@ -35,10 +38,16 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 200px;
 }
 
 #centre{
   height: 70px;
   width: 170px;
   border-radius: 10px;
+}
+
+#tryAgain{
+  margin-top: 30px;
+  margin-left: 10px;
 }

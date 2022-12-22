@@ -86,14 +86,21 @@ function game(playerChoice){
         element.innerHTML="Try again";
 
         divide.append(element);
+
+        let h1=document.createElement('h1');
+        h1.setAttribute('id', 'tryAgain');
+        
         if(counterComputer==counterPlayer){
-            alert("Looks like its a tie :|");
+            h1.textContent="Looks like its a tie :|";
+            document.body.appendChild(h1);
             document.body.appendChild(divide);
         } else if(counterPlayer>counterComputer){
-            alert("Congratulations, you won :D");
+            h1.textContent="Congratulations, you won :D";
+            document.body.appendChild(h1);
             document.body.appendChild(divide);
         } else {
-            alert("Unfortunate, but you lose :(");
+            h1.textContent="Unfortunate, but you lose :(";
+            document.body.appendChild(h1);
             document.body.appendChild(divide);
         }
         return;
